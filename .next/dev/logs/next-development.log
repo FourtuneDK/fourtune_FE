@@ -1,4 +1,7 @@
-[00:00:05.985] Server  LOG      ✓ Ready in 4.6s
-[00:00:09.246] Server  LOG      ○ Compiling / ...
-[00:00:15.411] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:15.714] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:02.006] Server  LOG      ✓ Ready in 1265ms
+[00:00:05.878] Server  LOG      ○ Compiling / ...
+[00:00:07.901] Server  WARN     ⚠ Cross origin request detected from 172.25.86.239 to /_next/* resource. In a future major version of Next.js, you will need to explicitly configure "allowedDevOrigins" in next.config to allow this.
+Read more: https://nextjs.org/docs/app/api-reference/config/next-config-js/allowedDevOrigins
+[00:00:07.971] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:15.339] Browser ERROR   {}
+[00:04:17.255] Server  LOG      ✓ Compiled in 36ms

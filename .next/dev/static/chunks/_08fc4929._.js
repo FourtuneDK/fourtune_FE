@@ -2,7 +2,7 @@
 "[project]/src/app/page.tsx [app-client] (ecmascript)", ((__turbopack_context__) => {
 "use strict";
 
-// 파일 업로드 - 인프라 테스트용 페이지
+// 인프라 - 파일 업로드 테스트용 페이지
 __turbopack_context__.s([
     "default",
     ()=>FileUploadPage
@@ -25,19 +25,20 @@ function FileUploadPage() {
             const formData = new FormData();
             formData.append("file", file);
             try {
-                const res = await fetch("/api/upload", {
+                //백엔드 API로 직접 요청
+                const res = await fetch("http://localhost:8080/file/upload", {
                     method: "POST",
                     body: formData
                 });
                 if (res.ok) {
                     const data = await res.json();
-                    setUploadStatus(`✅ 업로드 완료: ${data.message}`);
+                    setUploadStatus(`업로드 완료: ${data.message || "성공"}`);
                 } else {
-                    setUploadStatus("❌ 업로드 실패");
+                    setUploadStatus(`업로드 실패 (${res.status})`);
                 }
             } catch (err) {
                 console.error(err);
-                setUploadStatus("⚠️ 서버 오류 발생");
+                setUploadStatus("서버 연결 오류 발생");
             }
         }
     };
@@ -46,7 +47,7 @@ function FileUploadPage() {
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("head", {
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("title", {
-                    children: "파일 업로드 (Text)"
+                    children: "파일 업로드 테스트"
                 }, void 0, false, {
                     fileName: "[project]/src/app/page.tsx",
                     lineNumber: 43,
@@ -64,7 +65,7 @@ function FileUploadPage() {
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
                             className: "text-2xl font-bold mb-4",
-                            children: "📄 텍스트 파일 업로드"
+                            children: "파일 업로드 테스트"
                         }, void 0, false, {
                             fileName: "[project]/src/app/page.tsx",
                             lineNumber: 47,
@@ -82,7 +83,6 @@ function FileUploadPage() {
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
                             id: "file",
                             type: "file",
-                            accept: ".txt",
                             className: "hidden",
                             onChange: handleFileChange
                         }, void 0, false, {
@@ -98,13 +98,13 @@ function FileUploadPage() {
                                     children: fileName
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/page.tsx",
-                                    lineNumber: 66,
+                                    lineNumber: 65,
                                     columnNumber: 29
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/app/page.tsx",
-                            lineNumber: 65,
+                            lineNumber: 64,
                             columnNumber: 17
                         }, this),
                         uploadStatus && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -112,7 +112,7 @@ function FileUploadPage() {
                             children: uploadStatus
                         }, void 0, false, {
                             fileName: "[project]/src/app/page.tsx",
-                            lineNumber: 71,
+                            lineNumber: 70,
                             columnNumber: 17
                         }, this)
                     ]
