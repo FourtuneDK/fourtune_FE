@@ -1,3 +1,4 @@
+// 인프라 - 파일 업로드 테스트용 페이지
 "use client";
 
 import { useState } from "react";
@@ -17,7 +18,7 @@ export default function FileUploadPage() {
             formData.append("file", file);
 
             try {
-                // ✅ 백엔드 API로 직접 요청
+                //백엔드 API로 직접 요청
                 const res = await fetch("http://localhost:8080/file/upload", {
                     method: "POST",
                     body: formData,
@@ -25,13 +26,13 @@ export default function FileUploadPage() {
 
                 if (res.ok) {
                     const data = await res.json();
-                    setUploadStatus(`✅ 업로드 완료: ${data.message || "성공"}`);
+                    setUploadStatus(`업로드 완료: ${data.message || "성공"}`);
                 } else {
-                    setUploadStatus(`❌ 업로드 실패 (${res.status})`);
+                    setUploadStatus(`업로드 실패 (${res.status})`);
                 }
             } catch (err) {
                 console.error(err);
-                setUploadStatus("⚠️ 서버 연결 오류 발생");
+                setUploadStatus("서버 연결 오류 발생");
             }
         }
     };
@@ -43,7 +44,7 @@ export default function FileUploadPage() {
         </head>
         <body className="min-h-screen flex flex-col items-center justify-center bg-gray-50 font-sans">
         <div className="bg-white shadow-lg rounded-2xl p-8 w-full max-w-md text-center">
-            <h1 className="text-2xl font-bold mb-4">📄 파일 업로드 테스트</h1>
+            <h1 className="text-2xl font-bold mb-4">파일 업로드 테스트</h1>
 
             <label
                 htmlFor="file"
