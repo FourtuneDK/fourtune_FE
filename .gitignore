@@ -1,0 +1,47 @@
+# --- 기본 Node ---
+node_modules
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+package-lock.json
+.pnpm-debug.log*
+
+# --- 환경 변수 ---
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# --- Next.js 빌드 파일 ---
+.next/
+out/
+.vercel/
+dist/
+build/
+
+# --- OS / 편집기 관련 ---
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+.idea/
+.vscode/
+*.code-workspace
+
+# --- 테스트 / 캐시 ---
+coverage/
+.cache/
+tmp/
+temp/
+
+# --- Turbopack / experimental ---
+.turbo/
+.next-turbo/
+
+# --- 기타 ---
+*.log
+*.lock
+*.bak
+*.old
