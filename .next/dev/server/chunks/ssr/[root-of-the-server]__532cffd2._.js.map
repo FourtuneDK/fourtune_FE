@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 10, "column": 0}, "map": {"version":3,"sources":["file:///C:/Users/vicky/OneDrive/%EB%AC%B8%EC%84%9C/fourtune/app/page.tsx"],"sourcesContent":["export default function HomePage() {\r\n    return (\r\n        <main className=\"p-10 min-h-screen bg-gray-50\">\r\n            <h1 className=\"text-4xl font-bold text-blue-600\">Fortune MCP Platform</h1>\r\n            <p className=\"mt-4 text-lg text-gray-700\">\r\n                Model Context Platform을 웹에서 직접 체험해보세요 🚀\r\n            </p>\r\n\r\n            <div className=\"mt-10 p-6 bg-white rounded-2xl shadow-lg max-w-md\">\r\n                <h2 className=\"text-2xl font-semibold mb-3\">Tailwind Test</h2>\r\n                <button className=\"bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 transition\">\r\n                    버튼 눌러보기\r\n                </button>\r\n            </div>\r\n        </main>\r\n    );\r\n}\r\n"],"names":[],"mappings":";;;;;;AAAe,SAAS;IACpB,qBACI,8OAAC;QAAK,WAAU;;0BACZ,8OAAC;gBAAG,WAAU;0BAAmC;;;;;;0BACjD,8OAAC;gBAAE,WAAU;0BAA6B;;;;;;0BAI1C,8OAAC;gBAAI,WAAU;;kCACX,8OAAC;wBAAG,WAAU;kCAA8B;;;;;;kCAC5C,8OAAC;wBAAO,WAAU;kCAAwE;;;;;;;;;;;;;;;;;;AAM1G","debugId":null}}]
+}
