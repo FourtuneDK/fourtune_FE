@@ -1,4 +1,3 @@
-// 인프라 - 파일 업로드 테스트용 페이지
 "use client";
 
 import { useState } from "react";
@@ -18,7 +17,6 @@ export default function FileUploadPage() {
             formData.append("file", file);
 
             try {
-                //백엔드 API로 직접 요청
                 const res = await fetch("http://localhost:8080/file/upload", {
                     method: "POST",
                     body: formData,
@@ -38,39 +36,34 @@ export default function FileUploadPage() {
     };
 
     return (
-        <html lang="ko">
-        <head>
-            <title>파일 업로드 테스트</title>
-        </head>
-        <body className="min-h-screen flex flex-col items-center justify-center bg-gray-50 font-sans">
-        <div className="bg-white shadow-lg rounded-2xl p-8 w-full max-w-md text-center">
-            <h1 className="text-2xl font-bold mb-4">파일 업로드 테스트</h1>
+        <div className="min-h-screen flex flex-col items-center justify-center bg-gray-50 font-sans">
+            <div className="bg-white shadow-lg rounded-2xl p-8 w-full max-w-md text-center">
+                <h1 className="text-2xl font-bold mb-4">파일 업로드 테스트</h1>
 
-            <label
-                htmlFor="file"
-                className="cursor-pointer bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded-lg inline-block transition"
-            >
-                파일 선택
-            </label>
+                <label
+                    htmlFor="file"
+                    className="cursor-pointer bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded-lg inline-block transition"
+                >
+                    파일 선택
+                </label>
 
-            <input
-                id="file"
-                type="file"
-                className="hidden"
-                onChange={handleFileChange}
-            />
+                <input
+                    id="file"
+                    type="file"
+                    className="hidden"
+                    onChange={handleFileChange}
+                />
 
-            {fileName && (
-                <p className="mt-4 text-gray-700">
-                    선택된 파일: <strong>{fileName}</strong>
-                </p>
-            )}
+                {fileName && (
+                    <p className="mt-4 text-gray-700">
+                        선택된 파일: <strong>{fileName}</strong>
+                    </p>
+                )}
 
-            {uploadStatus && (
-                <p className="mt-2 text-sm text-gray-600">{uploadStatus}</p>
-            )}
+                {uploadStatus && (
+                    <p className="mt-2 text-sm text-gray-600">{uploadStatus}</p>
+                )}
+            </div>
         </div>
-        </body>
-        </html>
     );
 }

@@ -1,7 +1,51 @@
-[00:00:02.006] Server  LOG      ✓ Ready in 1265ms
-[00:00:05.878] Server  LOG      ○ Compiling / ...
-[00:00:07.901] Server  WARN     ⚠ Cross origin request detected from 172.25.86.239 to /_next/* resource. In a future major version of Next.js, you will need to explicitly configure "allowedDevOrigins" in next.config to allow this.
-Read more: https://nextjs.org/docs/app/api-reference/config/next-config-js/allowedDevOrigins
-[00:00:07.971] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:15.339] Browser ERROR   {}
-[00:04:17.255] Server  LOG      ✓ Compiled in 36ms
+[00:00:02.171] Server  LOG      ✓ Ready in 1428ms
+[00:00:06.962] Server  LOG      ○ Compiling / ...
+[00:00:11.219] Server  ERROR    ⨯ Error: The default export is not a React Component in "/layout"
+[00:00:12.221] Server  ERROR    ⨯ Error: The default export is not a React Component in "/layout"
+[00:00:15.236] Server  LOG      ○ Compiling /_error ...
+[00:00:17.072] Browser ERROR   uncaughtError: Error: The default export is not a React Component in "/layout"
+[00:02:14.164] Server  ERROR    ⨯ ./src/app/layout.tsx:1:1
+Module not found: Can't resolve './globals.css'
+> 1 | import "./globals.css";
+    | ^^^^^^^^^^^^^^^^^^^^^^^
+  2 | import { ReactNode } from "react";
+  3 |
+  4 | export const metadata = {
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:02:15.266] Browser ERROR   ./src/app/layout.tsx:1:1
+Module not found: Can't resolve './globals.css'
+> 1 | import "./globals.css";
+    | ^^^^^^^^^^^^^^^^^^^^^^^
+  2 | import { ReactNode } from "react";
+  3 |
+  4 | export const metadata = {
+
+https://nextjs.org/docs/messages/module-not-found
+[00:02:20.258] Browser ERROR   ./src/app/layout.tsx:1:1
+Module not found: Can't resolve './globals.css'
+> 1 | import "./globals.css";
+    | ^^^^^^^^^^^^^^^^^^^^^^^
+  2 | import { ReactNode } from "react";
+  3 |
+  4 | export const metadata = {
+
+https://nextjs.org/docs/messages/module-not-found
+[00:02:22.259] Browser ERROR   ./src/app/layout.tsx:1:1
+Module not found: Can't resolve './globals.css'
+> 1 | import "./globals.css";
+    | ^^^^^^^^^^^^^^^^^^^^^^^
+  2 | import { ReactNode } from "react";
+  3 |
+  4 | export const metadata = {
+
+https://nextjs.org/docs/messages/module-not-found
+[00:02:35.935] Server  LOG      ✓ Compiled in 45ms
+[00:02:36.529] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:02:44.311] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:03:04.226] Browser ERROR   {}
+[00:25:25.708] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
