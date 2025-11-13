@@ -1,0 +1,27 @@
+:root {
+    --bg-color-1: #f9fafb;
+    --bg-color-2: #ffffff;
+    --accent-color-1: #21295B;
+    --accent-color-2: rgba(33, 41, 91, 0.12);
+    --text-color-1: #111827;
+    --text-color-2: #9CA3AF;
+}
+
+@layer utilities {
+    /* 텍스트 */
+    .text-primary { color: var(--text-color-1); }
+    .text-secondary { color: var(--text-color-2); }
+
+    /* 배경 */
+    .bg-surface-1 { background-color: var(--bg-color-1); }
+    .bg-surface-2 { background-color: var(--bg-color-2); }
+    .bg-accent { background-color: var(--accent-color-1); }
+    .bg-accent-hover { background-color: var(--accent-color-2); }
+
+    /* Hover */
+    .hover\:bg-accent:hover { background-color: var(--accent-color-1); }
+    .hover\:bg-accent-hover:hover { background-color: var(--accent-color-2); }
+
+    /* Border */
+    .border-accent { border-color: var(--accent-color-1); }
+}
