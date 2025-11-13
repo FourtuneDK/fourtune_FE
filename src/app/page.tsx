@@ -64,6 +64,68 @@ export default function FileUploadPage() {
                     <p className="mt-2 text-sm text-gray-600">{uploadStatus}</p>
                 )}
             </div>
+
+
+            <div className="w-full max-w-4xl bg-white shadow-md rounded-2xl p-10 space-y-10">
+                <h2 className="text-center text-2xl font-bold text-gray-800 mb-8">
+                   [ 카카오 폰트 전체 미리보기 ]
+                </h2>
+
+                {/* KakaoBigSans */}
+                <div className="space-y-6">
+                    <h3 className="font-kakaoBig text-4xl font-extrabold text-gray-900">
+                        KakaoBigSans — 큰글씨 제목용
+                    </h3>
+                    <p className="font-kakaoBig text-2xl font-bold text-gray-800">
+                        2XL 굵은 제목: 카카오 큰글씨체 Bold
+                    </p>
+                    <p className="font-kakaoBig text-kakaoTitle font-semibold text-gray-700">
+                        Title 프리셋 (40px): 카카오 큰글씨체 Title
+                    </p>
+                    <p className="font-kakaoBig text-lg font-normal text-gray-600">
+                        본문 대비 강조: 카카오 큰글씨체 Regular
+                    </p>
+                </div>
+
+                <hr className="border-gray-200" />
+
+                {/* KakaoSmallSans */}
+                <div className="space-y-6">
+                    <h3 className="font-kakaoSmall text-3xl font-bold text-gray-900">
+                        KakaoSmallSans — 작은글씨 본문용
+                    </h3>
+                    <p className="font-kakaoSmall text-kakaoBody text-gray-700">
+                        Body 프리셋 (16px): 카카오 작은글씨체 Regular
+                    </p>
+                    <p className="font-kakaoSmall text-base font-medium text-gray-600">
+                        일반 본문 텍스트 예시입니다. 본문, 설명문, UI 텍스트에 사용됩니다.
+                    </p>
+                    <p className="font-kakaoSmall text-sm font-light text-gray-500">
+                        작은 텍스트 (14px): 버튼, 캡션, 보조 설명에 적합합니다.
+                    </p>
+                </div>
+
+                <hr className="border-gray-200" />
+
+                {/* 혼합 예시 */}
+                <div className="space-y-4">
+                    <h3 className="font-kakaoBig text-4xl font-extrabold text-gray-900">
+                        혼합 사용 예시
+                    </h3>
+                    <p className="font-kakaoSmall text-kakaoBody text-gray-700">
+            <span className="font-kakaoBig font-bold">
+              큰글씨 제목
+            </span>
+                        과{" "}
+                        <span className="font-kakaoSmall text-gray-800">
+              작은글씨 본문
+            </span>
+                        을 조합하면 시각적 계층이 명확해집니다.
+                    </p>
+                </div>
+            </div>
+
         </div>
+
     );
 }

@@ -1,51 +1,623 @@
-[00:00:02.171] Server  LOG      ✓ Ready in 1428ms
-[00:00:06.962] Server  LOG      ○ Compiling / ...
-[00:00:11.219] Server  ERROR    ⨯ Error: The default export is not a React Component in "/layout"
-[00:00:12.221] Server  ERROR    ⨯ Error: The default export is not a React Component in "/layout"
-[00:00:15.236] Server  LOG      ○ Compiling /_error ...
-[00:00:17.072] Browser ERROR   uncaughtError: Error: The default export is not a React Component in "/layout"
-[00:02:14.164] Server  ERROR    ⨯ ./src/app/layout.tsx:1:1
-Module not found: Can't resolve './globals.css'
-> 1 | import "./globals.css";
-    | ^^^^^^^^^^^^^^^^^^^^^^^
-  2 | import { ReactNode } from "react";
-  3 |
-  4 | export const metadata = {
+[00:00:01.860] Server  LOG      ✓ Ready in 1239ms
+[00:00:05.936] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:02:02.986] Server  LOG      ✓ Compiled in 91ms
+[00:02:03.601] Browser ERROR   ./src/app/page.tsx:91:1
+Parsing ecmascript source code failed
+  89 |
+  90 |     );
+> 91 | }
+     | ^
+  92 |
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import traces:
+  Client Component Browser:
+    ./src/app/page.tsx [Client Component Browser]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/page.tsx [Client Component SSR]
+    ./src/app/page.tsx [Server Component]
+[00:05:04.512] Server  LOG      ✓ Compiled in 84ms
+[00:05:29.704] Server  LOG      ✓ Compiled in 38ms
+[00:05:32.162] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:05:36.405] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:07:33.793] Server  LOG      ✓ Compiled in 53ms
+[00:09:21.428] Server  LOG      ✓ Compiled in 17ms
+[00:09:54.030] Server  LOG      ✓ Compiled in 25ms
+[00:10:57.152] Server  ERROR    ⨯ ./src/app/page.tsx:5:1
+Module not found: Can't resolve '../styles/colors.css'
+  3 | import { useState } from "react";
+  4 | import "../styles/typography.css"; // ← 카카오 폰트 정의
+> 5 | import "../styles/colors.css";     // ← 방금 작성한 색상 변수 파일
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function FileUploadPage() {
+  8 |     const [fileName, setFileName] = useState<string | null>(null);
 
 
+
+Import traces:
+  Client Component Browser:
+    ./src/app/page.tsx [Client Component Browser]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/page.tsx [Client Component SSR]
+    ./src/app/page.tsx [Server Component]
 
 https://nextjs.org/docs/messages/module-not-found
 
 
-[00:02:15.266] Browser ERROR   ./src/app/layout.tsx:1:1
-Module not found: Can't resolve './globals.css'
-> 1 | import "./globals.css";
-    | ^^^^^^^^^^^^^^^^^^^^^^^
-  2 | import { ReactNode } from "react";
-  3 |
-  4 | export const metadata = {
+[00:10:57.155] Server  ERROR    ⨯ ./src/app/page.tsx:5:1
+Module not found: Can't resolve '../styles/colors.css'
+  3 | import { useState } from "react";
+  4 | import "../styles/typography.css"; // ← 카카오 폰트 정의
+> 5 | import "../styles/colors.css";     // ← 방금 작성한 색상 변수 파일
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function FileUploadPage() {
+  8 |     const [fileName, setFileName] = useState<string | null>(null);
+
+
+
+Import traces:
+  Client Component Browser:
+    ./src/app/page.tsx [Client Component Browser]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/page.tsx [Client Component SSR]
+    ./src/app/page.tsx [Server Component]
 
 https://nextjs.org/docs/messages/module-not-found
-[00:02:20.258] Browser ERROR   ./src/app/layout.tsx:1:1
-Module not found: Can't resolve './globals.css'
-> 1 | import "./globals.css";
-    | ^^^^^^^^^^^^^^^^^^^^^^^
-  2 | import { ReactNode } from "react";
-  3 |
-  4 | export const metadata = {
+
+
+[00:10:57.158] Server  ERROR    ⨯ ./src/app/page.tsx:5:1
+Module not found: Can't resolve '../styles/colors.css'
+  3 | import { useState } from "react";
+  4 | import "../styles/typography.css"; // ← 카카오 폰트 정의
+> 5 | import "../styles/colors.css";     // ← 방금 작성한 색상 변수 파일
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function FileUploadPage() {
+  8 |     const [fileName, setFileName] = useState<string | null>(null);
+
+
+
+Import traces:
+  Client Component Browser:
+    ./src/app/page.tsx [Client Component Browser]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/page.tsx [Client Component SSR]
+    ./src/app/page.tsx [Server Component]
 
 https://nextjs.org/docs/messages/module-not-found
-[00:02:22.259] Browser ERROR   ./src/app/layout.tsx:1:1
-Module not found: Can't resolve './globals.css'
-> 1 | import "./globals.css";
-    | ^^^^^^^^^^^^^^^^^^^^^^^
-  2 | import { ReactNode } from "react";
-  3 |
-  4 | export const metadata = {
+
+
+[00:10:57.159] Server  ERROR    ⨯ ./src/app/page.tsx:5:1
+Module not found: Can't resolve '../styles/colors.css'
+  3 | import { useState } from "react";
+  4 | import "../styles/typography.css"; // ← 카카오 폰트 정의
+> 5 | import "../styles/colors.css";     // ← 방금 작성한 색상 변수 파일
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function FileUploadPage() {
+  8 |     const [fileName, setFileName] = useState<string | null>(null);
+
+
+
+Import traces:
+  Client Component Browser:
+    ./src/app/page.tsx [Client Component Browser]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/page.tsx [Client Component SSR]
+    ./src/app/page.tsx [Server Component]
 
 https://nextjs.org/docs/messages/module-not-found
-[00:02:35.935] Server  LOG      ✓ Compiled in 45ms
-[00:02:36.529] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:02:44.311] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:03:04.226] Browser ERROR   {}
-[00:25:25.708] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+
+
+[00:10:57.161] Server  ERROR    ⨯ ./src/app/page.tsx:5:1
+Module not found: Can't resolve '../styles/colors.css'
+  3 | import { useState } from "react";
+  4 | import "../styles/typography.css"; // ← 카카오 폰트 정의
+> 5 | import "../styles/colors.css";     // ← 방금 작성한 색상 변수 파일
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function FileUploadPage() {
+  8 |     const [fileName, setFileName] = useState<string | null>(null);
+
+
+
+Import traces:
+  Client Component Browser:
+    ./src/app/page.tsx [Client Component Browser]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/page.tsx [Client Component SSR]
+    ./src/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:10:57.163] Server  ERROR    ⨯ ./src/app/page.tsx:5:1
+Module not found: Can't resolve '../styles/colors.css'
+  3 | import { useState } from "react";
+  4 | import "../styles/typography.css"; // ← 카카오 폰트 정의
+> 5 | import "../styles/colors.css";     // ← 방금 작성한 색상 변수 파일
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function FileUploadPage() {
+  8 |     const [fileName, setFileName] = useState<string | null>(null);
+
+
+
+Import traces:
+  Client Component Browser:
+    ./src/app/page.tsx [Client Component Browser]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/page.tsx [Client Component SSR]
+    ./src/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:10:57.168] Server  ERROR    ⨯ ./src/app/page.tsx:5:1
+Module not found: Can't resolve '../styles/colors.css'
+  3 | import { useState } from "react";
+  4 | import "../styles/typography.css"; // ← 카카오 폰트 정의
+> 5 | import "../styles/colors.css";     // ← 방금 작성한 색상 변수 파일
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function FileUploadPage() {
+  8 |     const [fileName, setFileName] = useState<string | null>(null);
+
+
+
+Import traces:
+  Client Component Browser:
+    ./src/app/page.tsx [Client Component Browser]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/page.tsx [Client Component SSR]
+    ./src/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:10:57.169] Server  ERROR    ⨯ ./src/app/page.tsx:5:1
+Module not found: Can't resolve '../styles/colors.css'
+  3 | import { useState } from "react";
+  4 | import "../styles/typography.css"; // ← 카카오 폰트 정의
+> 5 | import "../styles/colors.css";     // ← 방금 작성한 색상 변수 파일
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function FileUploadPage() {
+  8 |     const [fileName, setFileName] = useState<string | null>(null);
+
+
+
+Import traces:
+  Client Component Browser:
+    ./src/app/page.tsx [Client Component Browser]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/page.tsx [Client Component SSR]
+    ./src/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:10:57.174] Server  ERROR    ⨯ ./src/app/page.tsx:5:1
+Module not found: Can't resolve '../styles/colors.css'
+  3 | import { useState } from "react";
+  4 | import "../styles/typography.css"; // ← 카카오 폰트 정의
+> 5 | import "../styles/colors.css";     // ← 방금 작성한 색상 변수 파일
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function FileUploadPage() {
+  8 |     const [fileName, setFileName] = useState<string | null>(null);
+
+
+
+Import traces:
+  Client Component Browser:
+    ./src/app/page.tsx [Client Component Browser]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/page.tsx [Client Component SSR]
+    ./src/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:10:57.176] Server  ERROR    ⨯ ./src/app/page.tsx:5:1
+Module not found: Can't resolve '../styles/colors.css'
+  3 | import { useState } from "react";
+  4 | import "../styles/typography.css"; // ← 카카오 폰트 정의
+> 5 | import "../styles/colors.css";     // ← 방금 작성한 색상 변수 파일
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function FileUploadPage() {
+  8 |     const [fileName, setFileName] = useState<string | null>(null);
+
+
+
+Import traces:
+  Client Component Browser:
+    ./src/app/page.tsx [Client Component Browser]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/page.tsx [Client Component SSR]
+    ./src/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:10:57.177] Server  ERROR    ⨯ ./src/app/page.tsx:5:1
+Module not found: Can't resolve '../styles/colors.css'
+  3 | import { useState } from "react";
+  4 | import "../styles/typography.css"; // ← 카카오 폰트 정의
+> 5 | import "../styles/colors.css";     // ← 방금 작성한 색상 변수 파일
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function FileUploadPage() {
+  8 |     const [fileName, setFileName] = useState<string | null>(null);
+
+
+
+Import traces:
+  Client Component Browser:
+    ./src/app/page.tsx [Client Component Browser]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/page.tsx [Client Component SSR]
+    ./src/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:10:57.179] Server  ERROR    ⨯ ./src/app/page.tsx:5:1
+Module not found: Can't resolve '../styles/colors.css'
+  3 | import { useState } from "react";
+  4 | import "../styles/typography.css"; // ← 카카오 폰트 정의
+> 5 | import "../styles/colors.css";     // ← 방금 작성한 색상 변수 파일
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function FileUploadPage() {
+  8 |     const [fileName, setFileName] = useState<string | null>(null);
+
+
+
+Import traces:
+  Client Component Browser:
+    ./src/app/page.tsx [Client Component Browser]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/page.tsx [Client Component SSR]
+    ./src/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:10:57.198] Server  LOG      ✓ Compiled in 583ms
+[00:10:57.317] Browser ERROR   ./src/styles/typography.css
+Error evaluating Node.js code
+Error: It looks like you're trying to use `tailwindcss` directly as a PostCSS plugin. The PostCSS plugin has moved to a separate package, so to continue using Tailwind CSS with PostCSS you'll need to install `@tailwindcss/postcss` and update your PostCSS configuration.
+    [at at (C:\Users\vicky\kakao\fourtune_FE\node_modules\tailwindcss\dist\lib.js:38:1629)]
+    [at <anonymous> (turbopack:///[turbopack-node]/transforms/postcss.ts:56:14)]
+    [at <anonymous>]
+    [at Module.init (turbopack:///[turbopack-node]/transforms/postcss.ts:43:33)]
+    [at run (turbopack:///[turbopack-node]/ipc/evaluate.ts:77:20)]
+    [at process.processTicksAndRejections (node:internal/process/task_queues:105:5)]
+
+Import trace:
+  Client Component Browser:
+    ./src/styles/typography.css [Client Component Browser]
+    ./src/app/page.tsx [Client Component Browser]
+    ./src/app/page.tsx [Server Component]
+[00:10:57.317] Browser ERROR   ./src/app/page.tsx:5:1
+Module not found: Can't resolve '../styles/colors.css'
+  3 | import { useState } from "react";
+  4 | import "../styles/typography.css"; // ← 카카오 폰트 정의
+> 5 | import "../styles/colors.css";     // ← 방금 작성한 색상 변수 파일
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function FileUploadPage() {
+  8 |     const [fileName, setFileName] = useState<string | null>(null);
+
+Import traces:
+  Client Component Browser:
+    ./src/app/page.tsx [Client Component Browser]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/page.tsx [Client Component SSR]
+    ./src/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[00:10:58.453] Server  ERROR    ⨯ ./src/styles/typography.css
+Error evaluating Node.js code
+Error: It looks like you're trying to use `tailwindcss` directly as a PostCSS plugin. The PostCSS plugin has moved to a separate package, so to continue using Tailwind CSS with PostCSS you'll need to install `@tailwindcss/postcss` and update your PostCSS configuration.
+    [at at (C:\Users\vicky\kakao\fourtune_FE\node_modules\tailwindcss\dist\lib.js:38:1629)]
+    [at <anonymous> (turbopack:///[turbopack-node]/transforms/postcss.ts:56:14)]
+    [at <anonymous>]
+    [at Module.init (turbopack:///[turbopack-node]/transforms/postcss.ts:43:33)]
+    [at run (turbopack:///[turbopack-node]/ipc/evaluate.ts:77:20)]
+    [at process.processTicksAndRejections (node:internal/process/task_queues:105:5)]
+
+Import trace:
+  Client Component Browser:
+    ./src/styles/typography.css [Client Component Browser]
+    ./src/app/page.tsx [Client Component Browser]
+    ./src/app/page.tsx [Server Component]
+
+
+
+./src/app/page.tsx:5:1
+Module not found: Can't resolve '../styles/colors.css'
+  3 | import { useState } from "react";
+  4 | import "../styles/typography.css"; // ← 카카오 폰트 정의
+> 5 | import "../styles/colors.css";     // ← 방금 작성한 색상 변수 파일
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function FileUploadPage() {
+  8 |     const [fileName, setFileName] = useState<string | null>(null);
+
+
+
+Import traces:
+  Client Component Browser:
+    ./src/app/page.tsx [Client Component Browser]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/page.tsx [Client Component SSR]
+    ./src/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:10:58.574] Browser ERROR   ./src/styles/typography.css
+Error evaluating Node.js code
+Error: It looks like you're trying to use `tailwindcss` directly as a PostCSS plugin. The PostCSS plugin has moved to a separate package, so to continue using Tailwind CSS with PostCSS you'll need to install `@tailwindcss/postcss` and update your PostCSS configuration.
+    [at at (C:\Users\vicky\kakao\fourtune_FE\node_modules\tailwindcss\dist\lib.js:38:1629)]
+    [at <anonymous> (turbopack:///[turbopack-node]/transforms/postcss.ts:56:14)]
+    [at <anonymous>]
+    [at Module.init (turbopack:///[turbopack-node]/transforms/postcss.ts:43:33)]
+    [at run (turbopack:///[turbopack-node]/ipc/evaluate.ts:77:20)]
+    [at process.processTicksAndRejections (node:internal/process/task_queues:105:5)]
+
+Import trace:
+  Client Component Browser:
+    ./src/styles/typography.css [Client Component Browser]
+    ./src/app/page.tsx [Client Component Browser]
+    ./src/app/page.tsx [Server Component]
+[00:10:58.574] Browser ERROR   ./src/app/page.tsx:5:1
+Module not found: Can't resolve '../styles/colors.css'
+  3 | import { useState } from "react";
+  4 | import "../styles/typography.css"; // ← 카카오 폰트 정의
+> 5 | import "../styles/colors.css";     // ← 방금 작성한 색상 변수 파일
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function FileUploadPage() {
+  8 |     const [fileName, setFileName] = useState<string | null>(null);
+
+Import traces:
+  Client Component Browser:
+    ./src/app/page.tsx [Client Component Browser]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/page.tsx [Client Component SSR]
+    ./src/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[00:10:59.623] Browser ERROR   ./src/styles/typography.css
+Error evaluating Node.js code
+Error: It looks like you're trying to use `tailwindcss` directly as a PostCSS plugin. The PostCSS plugin has moved to a separate package, so to continue using Tailwind CSS with PostCSS you'll need to install `@tailwindcss/postcss` and update your PostCSS configuration.
+    [at at (C:\Users\vicky\kakao\fourtune_FE\node_modules\tailwindcss\dist\lib.js:38:1629)]
+    [at <anonymous> (turbopack:///[turbopack-node]/transforms/postcss.ts:56:14)]
+    [at <anonymous>]
+    [at Module.init (turbopack:///[turbopack-node]/transforms/postcss.ts:43:33)]
+    [at run (turbopack:///[turbopack-node]/ipc/evaluate.ts:77:20)]
+    [at process.processTicksAndRejections (node:internal/process/task_queues:105:5)]
+
+Import trace:
+  Client Component Browser:
+    ./src/styles/typography.css [Client Component Browser]
+    ./src/app/page.tsx [Client Component Browser]
+    ./src/app/page.tsx [Server Component]
+[00:10:59.623] Browser ERROR   ./src/app/page.tsx:5:1
+Module not found: Can't resolve '../styles/colors.css'
+  3 | import { useState } from "react";
+  4 | import "../styles/typography.css"; // ← 카카오 폰트 정의
+> 5 | import "../styles/colors.css";     // ← 방금 작성한 색상 변수 파일
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function FileUploadPage() {
+  8 |     const [fileName, setFileName] = useState<string | null>(null);
+
+Import traces:
+  Client Component Browser:
+    ./src/app/page.tsx [Client Component Browser]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/page.tsx [Client Component SSR]
+    ./src/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[00:10:59.623] Browser ERROR   ./src/styles/typography.css
+Error evaluating Node.js code
+Error: It looks like you're trying to use `tailwindcss` directly as a PostCSS plugin. The PostCSS plugin has moved to a separate package, so to continue using Tailwind CSS with PostCSS you'll need to install `@tailwindcss/postcss` and update your PostCSS configuration.
+    [at at (C:\Users\vicky\kakao\fourtune_FE\node_modules\tailwindcss\dist\lib.js:38:1629)]
+    [at <anonymous> (turbopack:///[turbopack-node]/transforms/postcss.ts:56:14)]
+    [at <anonymous>]
+    [at Module.init (turbopack:///[turbopack-node]/transforms/postcss.ts:43:33)]
+    [at run (turbopack:///[turbopack-node]/ipc/evaluate.ts:77:20)]
+    [at process.processTicksAndRejections (node:internal/process/task_queues:105:5)]
+
+Import trace:
+  Client Component Browser:
+    ./src/styles/typography.css [Client Component Browser]
+    ./src/app/page.tsx [Client Component Browser]
+    ./src/app/page.tsx [Server Component]
+[00:10:59.623] Browser ERROR   ./src/app/page.tsx:5:1
+Module not found: Can't resolve '../styles/colors.css'
+  3 | import { useState } from "react";
+  4 | import "../styles/typography.css"; // ← 카카오 폰트 정의
+> 5 | import "../styles/colors.css";     // ← 방금 작성한 색상 변수 파일
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function FileUploadPage() {
+  8 |     const [fileName, setFileName] = useState<string | null>(null);
+
+Import traces:
+  Client Component Browser:
+    ./src/app/page.tsx [Client Component Browser]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/page.tsx [Client Component SSR]
+    ./src/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[00:11:00.587] Browser ERROR   uncaughtError: Error: ./src/styles/typography.css
+Error evaluating Node.js code
+Error: It looks like you're trying to use `tailwindcss` directly as a PostCSS plugin. The PostCSS plugin has moved to a separate package, so to continue using Tailwind CSS with PostCSS you'll need to install `@tailwindcss/postcss` and update your PostCSS configuration.
+    [at at (C:\Users\vicky\kakao\fourtune_FE\node_modules\tailwindcss\dist\lib.js:38:1629)]
+    [at <anonymous> (turbopack:///[turbopack-node]/transforms/postcss.ts:56:14)]
+    [at <anonymous>]
+    [at Module.init (turbopack:///[turbopack-node]/transforms/postcss.ts:43:33)]
+    [at run (turbopack:///[turbopack-node]/ipc/evaluate.ts:77:20)]
+    [at process.processTicksAndRejections (node:internal/process/task_queues:105:5)]
+
+Import trace:
+  Client Component Browser:
+    ./src/styles/typography.css [Client Component Browser]
+    ./src/app/page.tsx [Client Component Browser]
+    ./src/app/page.tsx [Server Component]
+
+
+[00:11:00.938] Browser ERROR   ./src/styles/typography.css
+Error evaluating Node.js code
+Error: It looks like you're trying to use `tailwindcss` directly as a PostCSS plugin. The PostCSS plugin has moved to a separate package, so to continue using Tailwind CSS with PostCSS you'll need to install `@tailwindcss/postcss` and update your PostCSS configuration.
+    [at at (C:\Users\vicky\kakao\fourtune_FE\node_modules\tailwindcss\dist\lib.js:38:1629)]
+    [at <anonymous> (turbopack:///[turbopack-node]/transforms/postcss.ts:56:14)]
+    [at <anonymous>]
+    [at Module.init (turbopack:///[turbopack-node]/transforms/postcss.ts:43:33)]
+    [at run (turbopack:///[turbopack-node]/ipc/evaluate.ts:77:20)]
+    [at process.processTicksAndRejections (node:internal/process/task_queues:105:5)]
+
+Import trace:
+  Client Component Browser:
+    ./src/styles/typography.css [Client Component Browser]
+    ./src/app/page.tsx [Client Component Browser]
+    ./src/app/page.tsx [Server Component]
+[00:11:00.938] Browser ERROR   ./src/app/page.tsx:5:1
+Module not found: Can't resolve '../styles/colors.css'
+  3 | import { useState } from "react";
+  4 | import "../styles/typography.css"; // ← 카카오 폰트 정의
+> 5 | import "../styles/colors.css";     // ← 방금 작성한 색상 변수 파일
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function FileUploadPage() {
+  8 |     const [fileName, setFileName] = useState<string | null>(null);
+
+Import traces:
+  Client Component Browser:
+    ./src/app/page.tsx [Client Component Browser]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/page.tsx [Client Component SSR]
+    ./src/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[00:11:01.305] Browser ERROR   ./src/styles/typography.css
+Error evaluating Node.js code
+Error: It looks like you're trying to use `tailwindcss` directly as a PostCSS plugin. The PostCSS plugin has moved to a separate package, so to continue using Tailwind CSS with PostCSS you'll need to install `@tailwindcss/postcss` and update your PostCSS configuration.
+    [at at (C:\Users\vicky\kakao\fourtune_FE\node_modules\tailwindcss\dist\lib.js:38:1629)]
+    [at <anonymous> (turbopack:///[turbopack-node]/transforms/postcss.ts:56:14)]
+    [at <anonymous>]
+    [at Module.init (turbopack:///[turbopack-node]/transforms/postcss.ts:43:33)]
+    [at run (turbopack:///[turbopack-node]/ipc/evaluate.ts:77:20)]
+    [at process.processTicksAndRejections (node:internal/process/task_queues:105:5)]
+
+Import trace:
+  Client Component Browser:
+    ./src/styles/typography.css [Client Component Browser]
+    ./src/app/page.tsx [Client Component Browser]
+    ./src/app/page.tsx [Server Component]
+[00:11:01.305] Browser ERROR   ./src/app/page.tsx:5:1
+Module not found: Can't resolve '../styles/colors.css'
+  3 | import { useState } from "react";
+  4 | import "../styles/typography.css"; // ← 카카오 폰트 정의
+> 5 | import "../styles/colors.css";     // ← 방금 작성한 색상 변수 파일
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function FileUploadPage() {
+  8 |     const [fileName, setFileName] = useState<string | null>(null);
+
+Import traces:
+  Client Component Browser:
+    ./src/app/page.tsx [Client Component Browser]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/page.tsx [Client Component SSR]
+    ./src/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[00:11:07.905] Browser ERROR   ./src/styles/typography.css
+Error evaluating Node.js code
+Error: It looks like you're trying to use `tailwindcss` directly as a PostCSS plugin. The PostCSS plugin has moved to a separate package, so to continue using Tailwind CSS with PostCSS you'll need to install `@tailwindcss/postcss` and update your PostCSS configuration.
+    [at at (C:\Users\vicky\kakao\fourtune_FE\node_modules\tailwindcss\dist\lib.js:38:1629)]
+    [at <anonymous> (turbopack:///[turbopack-node]/transforms/postcss.ts:56:14)]
+    [at <anonymous>]
+    [at Module.init (turbopack:///[turbopack-node]/transforms/postcss.ts:43:33)]
+    [at run (turbopack:///[turbopack-node]/ipc/evaluate.ts:77:20)]
+    [at process.processTicksAndRejections (node:internal/process/task_queues:105:5)]
+
+Import trace:
+  Client Component Browser:
+    ./src/styles/typography.css [Client Component Browser]
+    ./src/app/page.tsx [Client Component Browser]
+    ./src/app/page.tsx [Server Component]
+[00:11:07.905] Browser ERROR   ./src/app/page.tsx:5:1
+Module not found: Can't resolve '../styles/colors.css'
+  3 | import { useState } from "react";
+  4 | import "../styles/typography.css"; // ← 카카오 폰트 정의
+> 5 | import "../styles/colors.css";     // ← 방금 작성한 색상 변수 파일
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function FileUploadPage() {
+  8 |     const [fileName, setFileName] = useState<string | null>(null);
+
+Import traces:
+  Client Component Browser:
+    ./src/app/page.tsx [Client Component Browser]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/page.tsx [Client Component SSR]
+    ./src/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[00:11:16.594] Server  LOG      ✓ Compiled in 37ms
+[00:11:16.954] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
